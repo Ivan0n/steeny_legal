@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Пользовательское соглашение и политика конфиденциальности сайта Steeny.">
+  <title>Правовые документы — Steeny</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --black: #111;
+      --text: #181818;
+      --muted: #555;
+      --line: #d9d9d9;
+      --paper: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--paper);
+      color: var(--text);
+      font: 16px/1.55 'Nunito', sans-serif;
+    }
+    a { color: var(--black); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--black); outline-offset: 3px; }
+    .skip-link {
+      position: fixed; top: -60px; left: 16px; z-index: 10;
+      padding: 9px 13px; color: var(--paper); background: var(--black);
+    }
+    .skip-link:focus { top: 10px; }
+    .container { width: min(1140px, calc(100% - 48px)); margin: 0 auto; }
+    .site-header { background: #111; color: #fff; }
+    .site-header .container {
+      min-height: 104px; display: flex; justify-content: space-between;
+      align-items: center; gap: 28px;
+    }
+    .brand-block { display: flex; align-items: center; gap: 25px; }
+    .brand { color: #fff; text-decoration: none; font: 700 30px 'Comfortaa', sans-serif; letter-spacing: -.8px; }
+    .brand:hover { color: #fff; }
+    .brand-caption { color: #b5b5b5; font-size: 13px; line-height: 1.4; border-left: 1px solid #414141; padding-left: 25px; }
+    .site-header a:focus-visible, .site-footer a:focus-visible { outline-color: #fff; }
+    .legal-nav { background: #fff; border-bottom: 1px solid var(--line); }
+    .legal-nav .container { display: flex; align-items: center; flex-wrap: wrap; column-gap: 28px; row-gap: 8px; padding-top: 15px; padding-bottom: 15px; }
+    .legal-nav-label { color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; margin-right: 25px; }
+    .legal-nav a { color: var(--black); text-decoration: none; padding: 9px 0; font-size: 14px; font-weight: 700; }
+    .legal-nav a:hover, .legal-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
+    main { padding-top: 52px; padding-bottom: 96px; }
+    .document { scroll-margin-top: 25px; }
+    .document + .document { border-top: 1px solid var(--line); margin-top: 88px; padding-top: 76px; }
+    .document h2 {
+      margin: 0 0 8px; color: var(--black);
+      font-size: clamp(33px, 4vw, 43px); line-height: 1.14;
+      font-family: 'Comfortaa', sans-serif; letter-spacing: -.035em; font-weight: 700;
+      hyphens: auto; overflow-wrap: anywhere;
+    }
+    .document-tools { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 24px; }
+    .update-date { margin: 0; color: var(--muted); }
+    .pdf-link { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 15px; border: 1px solid #bcbcbc; border-radius: 6px; background: #fff; color: #111; font-size: 14px; font-weight: 700; text-decoration: none; }
+    .pdf-link:hover { border-color: #111; text-decoration: underline; }
+    .contents { margin: 0 0 31px; }
+    .contents ol { list-style: none; margin: 0; padding: 0; }
+    .contents li { margin: 0 0 13px; }
+    .contents a { text-decoration: none; }
+    .contents a:hover { text-decoration: underline; }
+    .legal-section { scroll-margin-top: 25px; }
+    .legal-section h3 {
+      margin: 28px 0 12px; color: var(--black);
+      font-size: clamp(23px, 2.5vw, 29px); line-height: 1.2;
+      font-family: 'Comfortaa', sans-serif; letter-spacing: -.02em; font-weight: 700;
+    }
+    .legal-section p { margin: 0 0 16px; }
+    .legal-section ul { margin: 0 0 18px; padding-left: 26px; }
+    .legal-section li { margin-bottom: 8px; }
+    .clause-number { font-weight: 700; }
+    .site-footer { background: #111; color: #fff; padding: 62px 0 25px; }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1.1fr; gap: 42px; padding-bottom: 52px; }
+    .footer-brand { display: inline-block; color: #fff; text-decoration: none; font: 700 34px 'Comfortaa', sans-serif; letter-spacing: -1px; }
+    .footer-description { color: #aaa; margin: 15px 0 0; max-width: 230px; font-size: 14px; }
+    .footer-label { margin: 0 0 18px; color: #aaa; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+    .footer-links a { color: #eee; text-decoration: none; font-size: 14px; }
+    .footer-links a:hover { text-decoration: underline; }
+    .footer-app-links { margin-top: 18px; }
+    .footer-email { color: #fff; font-size: clamp(18px, 2vw, 23px); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 6px; }
+    .footer-support-note { color: #aaa; font-size: 13px; margin: 15px 0 0; }
+    .footer-bottom { border-top: 1px solid #363636; padding-top: 23px; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 13px; }
+    .footer-bottom a { color: #b5b5b5; text-decoration: none; }
+    .footer-bottom a:hover { color: #fff; text-decoration: underline; }
+    @media (max-width: 900px) {
+      .brand-caption { display: none; }
+      .legal-nav-label { flex-basis: 100%; margin: 0 0 3px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+      .footer-intro { grid-column: 1 / -1; }
+      .footer-description { max-width: none; }
+    }
+    @media (max-width: 650px) {
+      .container { width: min(100% - 32px, 1140px); }
+      .site-header .container { min-height: 86px; gap: 18px; }
+      .brand { font-size: 25px; }
+      .legal-nav .container { gap: 6px; padding-top: 16px; padding-bottom: 16px; }
+      .legal-nav a { font-size: 13px; padding: 8px 0; }
+      main { padding-top: 36px; padding-bottom: 62px; }
+      .document h2 { font-size: clamp(24px, 7.5vw, 29px); }
+      .document + .document { margin-top: 62px; padding-top: 53px; }
+      .site-footer { padding-top: 44px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 31px; padding-bottom: 37px; }
+      .footer-intro { grid-column: auto; }
+      .footer-brand { font-size: 30px; }
+      .footer-label { margin-bottom: 12px; }
+      .footer-support-note { margin-top: 12px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      .site-header, .legal-nav, .site-footer, .skip-link, .pdf-link { display: none; }
+      .container { width: 100%; }
+      main { padding: 0; }
+      .document + .document { break-before: page; border: 0; margin: 0; padding: 0; }
+      .legal-section { break-inside: avoid-page; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#documents">Перейти к документам</a>
+  <header class="site-header" id="top">
+    <div class="container">
+      <div class="brand-block">
+        <a class="brand" href="https://steeny.xyz" aria-label="Steeny — на главную">Steeny</a>
+        <span class="brand-caption">Правовая информация<br>и поддержка</span>
+      </div>
+    </div>
+  </header>
+  <nav class="legal-nav" aria-label="Правовые документы">
+    <div class="container">
+      <span class="legal-nav-label">Юридическая информация</span>
+      <a href="#agreement">Пользовательское соглашение</a>
+      <a href="#privacy">Политика конфиденциальности</a>
+    </div>
+  </nav>
+  <main class="container" id="documents">
+    <article class="document" id="agreement" aria-labelledby="agreement-title">
+  <h2 id="agreement-title">Пользовательское соглашение</h2>
+  <div class="document-tools">
+    <p class="update-date">Последнее обновление: 30 сентября 2026 г.</p>
+    <a class="pdf-link" href="user-agreement-site.pdf" target="_blank" rel="noopener" aria-label="Открыть как PDF: Пользовательское соглашение (в новой вкладке)">Открыть как PDF</a>
+  </div>
+  <nav class="contents" aria-label="Разделы: Пользовательское соглашение">
+    <ol>
+<li><a href="#agreement-1">1. Общие положения</a></li>
+<li><a href="#agreement-2">2. Возможности Сайта</a></li>
+<li><a href="#agreement-3">3. Аккаунт и безопасность</a></li>
+<li><a href="#agreement-4">4. Материалы Пользователя и правила поведения</a></li>
+<li><a href="#agreement-5">5. Права на Сайт и сторонние материалы</a></li>
+<li><a href="#agreement-6">6. Доступность и ответственность</a></li>
+<li><a href="#agreement-7">7. Конфиденциальность</a></li>
+<li><a href="#agreement-8">8. Изменение Соглашения</a></li>
+<li><a href="#agreement-9">9. Заключительные положения</a></li>
+    </ol>
+  </nav>
+<section class="legal-section" id="agreement-1"><h3>1. Общие положения</h3>
+<p><span class="clause-number">1.1.</span> Настоящее соглашение регулирует использование сайта Steeny по адресу <a href="https://steeny.xyz">steeny.xyz</a> и доступных через него функций (далее — «Сайт»). Под «Администрацией» понимаются лица, обеспечивающие работу Сайта; под «Пользователем» — лицо, использующее Сайт.</p>
+<p><span class="clause-number">1.2.</span> Создавая аккаунт, входя в него или используя функции Сайта, Пользователь принимает условия Соглашения. Если Пользователь не согласен с ними, ему следует прекратить использование Сайта.</p>
+<p><span class="clause-number">1.3.</span> Отдельные функции Сайта могут зависеть от сторонних сервисов. Используя такие функции, Пользователь также должен соблюдать применимые правила соответствующего сервиса.</p>
+</section>
+<section class="legal-section" id="agreement-2"><h3>2. Возможности Сайта</h3>
+<p><span class="clause-number">2.1.</span> Steeny предоставляет функции поиска и прослушивания музыки, формирования рекомендаций и подборок, создания и совместного использования плейлистов, оформления профиля, публикации комментариев и взаимодействия с другими пользователями. Набор функций может меняться.</p>
+<p><span class="clause-number">2.2.</span> Музыкальные записи, изображения, сведения об исполнителях и другие материалы могут поступать из внешних источников. Их доступность, состав и условия использования определяются в том числе правообладателями и соответствующими сервисами. Наличие материала на Сайте не означает передачи Пользователю прав на его копирование или распространение.</p>
+<p><span class="clause-number">2.3.</span> Сайт может содержать ссылки и функции перехода к сторонним ресурсам. Администрация не управляет их содержимым и правилами работы.</p>
+</section>
+<section class="legal-section" id="agreement-3"><h3>3. Аккаунт и безопасность</h3>
+<p><span class="clause-number">3.1.</span> При регистрации Пользователь предоставляет достоверные данные, необходимые для создания аккаунта, и отвечает за сохранность своих данных для входа. Пользователь не должен передавать доступ к аккаунту третьим лицам.</p>
+<p><span class="clause-number">3.2.</span> Действия, совершённые через аккаунт, считаются действиями его владельца, пока Администрации не стало известно о несанкционированном доступе. При подозрении на такой доступ Пользователю следует сменить пароль и сообщить об этом по адресу <a href="mailto:support@steeny.xyz">support@steeny.xyz</a>.</p>
+<p><span class="clause-number">3.3.</span> Пользователь может управлять доступностью профиля и отдельных материалов с помощью настроек приватности, предусмотренных Сайтом. Публикуя материалы или открывая к ним доступ другим пользователям, Пользователь учитывает, что эти лица смогут их просматривать.</p>
+</section>
+<section class="legal-section" id="agreement-4"><h3>4. Материалы Пользователя и правила поведения</h3>
+<p><span class="clause-number">4.1.</span> Пользователь отвечает за размещаемые им изображения, описания, плейлисты, комментарии, сообщения и другие материалы. Он подтверждает, что обладает необходимыми правами на их размещение и что они не нарушают права других лиц.</p>
+<p><span class="clause-number">4.2.</span> Пользователь сохраняет права на собственные материалы. На время их размещения он разрешает Администрации хранить, воспроизводить и технически обрабатывать эти материалы в объёме, необходимом для работы функций Сайта и предоставления доступа в соответствии с выбранными настройками. Это разрешение не даёт Администрации права продавать материалы Пользователя как самостоятельный продукт.</p>
+<p><span class="clause-number">4.3.</span> При использовании Сайта запрещается:</p>
+<ul>
+<li>размещать материалы, нарушающие законодательство, права на результаты интеллектуальной деятельности, частную жизнь или права других лиц;</li>
+<li>выдавать себя за другое лицо, публиковать чужие персональные данные без надлежащего основания, угрожать другим пользователям или преследовать их;</li>
+<li>распространять спам, вредоносный код или обманные ссылки;</li>
+<li>получать доступ к чужим аккаунтам и данным, обходить ограничения Сайта либо мешать его работе;</li>
+<li>использовать Сайт и полученные через него материалы с нарушением правил сторонних сервисов и правообладателей.</li>
+</ul>
+<p><span class="clause-number">4.4.</span> Администрация может скрыть или удалить материалы, а также временно ограничить доступ к функциям или аккаунту, если есть основания полагать, что Пользователь нарушает Соглашение, права других лиц или применимые требования закона. По возможности Пользователю сообщается причина ограничения.</p>
+</section>
+<section class="legal-section" id="agreement-5"><h3>5. Права на Сайт и сторонние материалы</h3>
+<p><span class="clause-number">5.1.</span> Программный код, оформление и собственные материалы Steeny охраняются в соответствии с применимым законодательством. Использование Сайта не передаёт Пользователю исключительных прав на них.</p>
+<p><span class="clause-number">5.2.</span> Права на музыку, обложки и иные материалы третьих лиц принадлежат соответствующим правообладателям. Пользователь вправе использовать их только в пределах разрешённого правообладателями, сторонними сервисами и законом.</p>
+<p><span class="clause-number">5.3.</span> Если Пользователь считает, что размещённый на Сайте материал нарушает его права, он может сообщить об этом Администрации по адресу <a href="mailto:support@steeny.xyz">support@steeny.xyz</a>, указав ссылку на материал и основание обращения.</p>
+</section>
+<section class="legal-section" id="agreement-6"><h3>6. Доступность и ответственность</h3>
+<p><span class="clause-number">6.1.</span> Администрация поддерживает работу Сайта, но отдельные функции могут временно быть недоступны из-за обслуживания, сбоев или изменений в работе сторонних сервисов. Состав и доступность внешнего контента могут меняться без участия Администрации.</p>
+<p><span class="clause-number">6.2.</span> Пользователь самостоятельно оценивает материалы и рекомендации, полученные через Сайт. Администрация не гарантирует, что Сайт будет соответствовать всем ожиданиям Пользователя или работать без перерывов и ошибок.</p>
+<p><span class="clause-number">6.3.</span> Соглашение не исключает и не ограничивает ответственность Администрации или права Пользователя в случаях, когда такое исключение или ограничение запрещено применимым законодательством.</p>
+</section>
+<section class="legal-section" id="agreement-7"><h3>7. Конфиденциальность</h3>
+<p><span class="clause-number">7.1.</span> Порядок обработки данных Пользователя описан в <a href="#privacy">Политике конфиденциальности</a>. Пользователю следует ознакомиться с ней до регистрации и использования функций Сайта.</p>
+</section>
+<section class="legal-section" id="agreement-8"><h3>8. Изменение Соглашения</h3>
+<p><span class="clause-number">8.1.</span> Администрация может обновлять Соглашение при изменении функций Сайта или условий его работы. Новая редакция публикуется на Сайте с указанием даты. Она применяется с момента публикации, если в ней не указана более поздняя дата.</p>
+<p><span class="clause-number">8.2.</span> Продолжение использования Сайта после вступления новой редакции в силу означает принятие обновлённых условий. Если Пользователь с ними не согласен, ему следует прекратить использование Сайта.</p>
+</section>
+<section class="legal-section" id="agreement-9"><h3>9. Заключительные положения</h3>
+<p><span class="clause-number">9.1.</span> Вопросы, связанные с использованием Сайта и настоящим Соглашением, разрешаются по применимому законодательству. Недействительность отдельного положения не затрагивает остальные положения Соглашения.</p>
+</section>
+</article>
+<article class="document" id="privacy" aria-labelledby="privacy-title">
+  <h2 id="privacy-title">Политика конфиденциальности</h2>
+  <div class="document-tools">
+    <p class="update-date">Последнее обновление: 30 сентября 2026 г.</p>
+    <a class="pdf-link" href="privacy-policy-site.pdf" target="_blank" rel="noopener" aria-label="Открыть как PDF: Политика конфиденциальности (в новой вкладке)">Открыть как PDF</a>
+  </div>
+  <nav class="contents" aria-label="Разделы: Политика конфиденциальности">
+    <ol>
+<li><a href="#privacy-1">1. Общие положения</a></li>
+<li><a href="#privacy-2">2. Какие данные обрабатываются</a></li>
+<li><a href="#privacy-3">3. Для чего используются данные</a></li>
+<li><a href="#privacy-4">4. Доступ других лиц и сторонние сервисы</a></li>
+<li><a href="#privacy-5">5. Хранение и защита</a></li>
+<li><a href="#privacy-6">6. Управление данными</a></li>
+<li><a href="#privacy-7">7. Изменения Политики</a></li>
+    </ol>
+  </nav>
+<section class="legal-section" id="privacy-1"><h3>1. Общие положения</h3>
+<p><span class="clause-number">1.1.</span> Настоящая Политика описывает, какие данные могут обрабатываться при использовании сайта Steeny по адресу <a href="https://steeny.xyz">steeny.xyz</a>, для чего они нужны и как Пользователь может управлять доступностью своих материалов.</p>
+<p><span class="clause-number">1.2.</span> Под «Администрацией» понимаются лица, обеспечивающие работу Сайта. Условия использования Сайта приведены в <a href="#agreement">Пользовательском соглашении</a>.</p>
+</section>
+<section class="legal-section" id="privacy-2"><h3>2. Какие данные обрабатываются</h3>
+<p><span class="clause-number">2.1.</span> При регистрации и использовании аккаунта могут обрабатываться адрес электронной почты, имя пользователя, идентификатор аккаунта, данные для подтверждения входа и настройки профиля. Пароль используется для проверки доступа и не должен публиковаться Пользователем на Сайте.</p>
+<p><span class="clause-number">2.2.</span> В зависимости от используемых функций могут обрабатываться созданные плейлисты, отметки «нравится», настройки, история взаимодействия с функциями Сайта, комментарии, сообщения, загруженные изображения и сведения, которые Пользователь добровольно размещает в профиле.</p>
+<p><span class="clause-number">2.3.</span> Для работы и защиты Сайта могут обрабатываться технические данные: IP-адрес, сведения о браузере и устройстве, время запросов, данные сессии, cookie и локальное хранилище браузера. При использовании подключённых внешних сервисов могут обрабатываться сведения, необходимые для выполнения соответствующего запроса.</p>
+<p><span class="clause-number">2.4.</span> Не следует размещать в открытых полях профиля, комментариях и сообщениях сведения, которые Пользователь не хочет сообщать другим людям.</p>
+</section>
+<section class="legal-section" id="privacy-3"><h3>3. Для чего используются данные</h3>
+<p><span class="clause-number">3.1.</span> Данные используются для создания аккаунта и входа в него, работы поиска, рекомендаций, плейлистов и других функций, сохранения настроек, отображения материалов другим пользователям в соответствии с настройками доступа, защиты Сайта от злоупотреблений, устранения ошибок и ответа на обращения.</p>
+<p><span class="clause-number">3.2.</span> Технические сведения могут использоваться для обеспечения безопасности, диагностики и улучшения работы Сайта. Объём обработки зависит от функций, которыми Пользователь фактически пользуется.</p>
+</section>
+<section class="legal-section" id="privacy-4"><h3>4. Доступ других лиц и сторонние сервисы</h3>
+<p><span class="clause-number">4.1.</span> Другим пользователям доступны сведения и материалы, которые Пользователь сделал открытыми или доступными участникам совместных функций. Отображение профиля и отдельных его элементов зависит от настроек приватности Сайта.</p>
+<p><span class="clause-number">4.2.</span> Для поиска и воспроизведения контента, защиты форм и работы иных подключённых функций Сайт может обращаться к сторонним сервисам. Таким сервисам передаются данные, необходимые для выполнения запроса; при переходе на их сайты обработка данных определяется их собственными правилами.</p>
+<p><span class="clause-number">4.3.</span> Данные также могут предоставляться в случаях, предусмотренных применимым законодательством, либо с согласия Пользователя. Администрация не публикует адрес электронной почты Пользователя как часть его общедоступного профиля.</p>
+</section>
+<section class="legal-section" id="privacy-5"><h3>5. Хранение и защита</h3>
+<p><span class="clause-number">5.1.</span> Данные хранятся в течение времени, необходимого для работы аккаунта и функций Сайта, решения технических и правовых вопросов. Срок хранения отдельных технических записей и резервных копий может отличаться. После отпадения основания для хранения данные удаляются или обезличиваются в соответствии с применимыми требованиями.</p>
+<p><span class="clause-number">5.2.</span> Администрация применяет разумные организационные и технические меры защиты. Передача информации через интернет не может быть абсолютно безопасной; Пользователь должен беречь пароль и не передавать его другим лицам.</p>
+</section>
+<section class="legal-section" id="privacy-6"><h3>6. Управление данными</h3>
+<p><span class="clause-number">6.1.</span> Пользователь может изменять доступные настройки профиля и приватности, а также редактировать или удалять материалы в пределах возможностей Сайта.</p>
+<p><span class="clause-number">6.2.</span> По вопросам доступа, исправления или удаления данных Пользователь может обратиться к Администрации по адресу <a href="mailto:support@steeny.xyz">support@steeny.xyz</a>. Для защиты аккаунта Администрация может запросить подтверждение того, что обращается его владелец.</p>
+</section>
+<section class="legal-section" id="privacy-7"><h3>7. Изменения Политики</h3>
+<p><span class="clause-number">7.1.</span> При изменении работы Сайта или порядка обработки данных Администрация может обновить Политику. Актуальная редакция публикуется на Сайте с новой датой и применяется с момента публикации, если в ней не указан более поздний срок.</p>
+</section>
+</article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-intro">
+          <a class="footer-brand" href="https://steeny.xyz">Steeny</a>
+          <p class="footer-description">Условия использования сервиса и информация о ваших данных.</p>
+          <nav class="footer-links footer-app-links" aria-label="Сервис и приложение">
+            <a href="https://music.steeny.xyz">music.steeny.xyz</a>
+            <a href="https://github.com/Ivan0n/SteenyClient/releases">Скачать приложение</a>
+          </nav>
+        </div>
+        <nav aria-label="Документы в подвале">
+          <p class="footer-label">Документы</p>
+          <div class="footer-links">
+            <a href="#agreement">Пользовательское соглашение</a>
+            <a href="#privacy">Политика конфиденциальности</a>
+          </div>
+        </nav>
+        <div>
+          <p class="footer-label">Поддержка</p>
+          <a class="footer-email" href="mailto:support@steeny.xyz">support@steeny.xyz</a>
+          <p class="footer-support-note">По вопросам сервиса и правовых документов.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="https://steeny.xyz">steeny.xyz</a>
+        <a href="#top">Вернуться наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (() => {
+      const links = [...document.querySelectorAll('.legal-nav a[href^="#"]')];
+      const update = () => {
+        const active = location.hash.startsWith('#privacy') ? '#privacy' : '#agreement';
+        for (const link of links) {
+          if (link.getAttribute('href') === active) link.setAttribute('aria-current', 'page');
+          else link.removeAttribute('aria-current');
+        }
+      };
+      addEventListener('hashchange', update);
+      update();
+    })();
+  </script>
+</body>
+</html>
